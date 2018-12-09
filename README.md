@@ -15,6 +15,7 @@
 * [the Construct](http://www.theconstructsim.com/): Learn to Develop for Robots with ROS
 * [ros_tutorials (ROS Wiki)](http://wiki.ros.org/ros_tutorials)
 * [ROS Tutorials (ClearPath)](http://www.clearpathrobotics.com/assets/guides/ros/index.html)
+* [机器人操作系统入门](http://www.icourse163.org/course/ISCAS-1002580008)
 
 
 ### Code
