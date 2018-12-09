@@ -1,0 +1,6 @@
+
+roslaunch robot1_description state_xacro.launch model:="`rospack find robot1_description`/urdf/robot1.xacro"
+
+roslaunch robot1_gazebo gazebo.launch model:="`rospack find robot1_description`/urdf/robot1_base_03.xacro"
+
+roslaunch robot1_gazebo gazebo_wg.launch
