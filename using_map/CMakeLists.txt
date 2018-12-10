@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
 project(using_map)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -11,6 +11,12 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   visualization_msgs
 )
+
+find_package( OpenCV )
+if( OpenCV_FOUND )
+	include_directories( ${OpenCV_INCLUDE_DIRS} )
+	link_libraries( ${OpenCV_LIBS} )
+endif()
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
