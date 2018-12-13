@@ -8,6 +8,8 @@ add_compile_options(-std=c++11)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  tf
+  tf_conversions
   roscpp
   visualization_msgs
 )
@@ -140,6 +142,7 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(draw_map src/draw_map.cpp)
 add_executable(read_map src/read_map.cpp)
+add_executable(read_map_turtlebot_stage src/read_map_turtlebot_stage.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -157,6 +160,7 @@ add_executable(read_map src/read_map.cpp)
 # )
 target_link_libraries(draw_map ${catkin_LIBRARIES})
 target_link_libraries(read_map ${catkin_LIBRARIES})
+target_link_libraries(read_map_turtlebot_stage ${catkin_LIBRARIES})
 
 
 #############
