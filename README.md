@@ -1,4 +1,4 @@
-# ROS Practice
+# ROS & Gazebo
 
 * [ROS.org](http://www.ros.org/)
 * [ROS Discourse](https://discourse.ros.org/)
@@ -41,3 +41,30 @@
 ```
 rospack plugins --attrib=plugin costmap_2d
 ```
+
+## Gazebo and ROS
+
+### Files
+
+* mesh files: .stl, .dae
+* urdf files: .sdf, .urdf, .xacro
+* world files: .world
+
+### gazebo_ros
+
+```sh
+roslaunch gazebo_ros empty_world.launch
+roslaunch gazebo_ros willowgarage_world.launch
+roslaunch gazebo_ros mud_world.launch
+```
+
+### Simulations
+
+* run gmapping with turtlebot on Gazebo
+  ```sh
+  roslaunch turtlebot_gazebo turtlebot_world.launch
+  roslaunch turtlebot_gazebo gmapping_demo.launch
+  roslaunch turtlebot_rviz_launchers view_navigation.launch
+
+  roslaunch turtlebot_teleop keyboard_teleop.launch --screen
+  ```
