@@ -5,6 +5,7 @@
 * [ROS机器人俱乐部](http://www.rosclub.cn/)
 * [eros](http://wiki.ros.org/eros)
 * [ros2](https://index.ros.org/doc/ros2/)
+* [ROS-Industrial](https://rosindustrial.org/)
 
 ------
 
@@ -16,9 +17,11 @@
 * [ros_tutorials (ROS Wiki)](http://wiki.ros.org/ros_tutorials)
 * [ROS Tutorials (ClearPath)](http://www.clearpathrobotics.com/assets/guides/ros/index.html)
 * [机器人操作系统入门](http://www.icourse163.org/course/ISCAS-1002580008)
+* [古月居(CSDN)](https://blog.csdn.net/hcx25909)
+* [ROS与navigation教程（创客智造）](https://www.ncnynl.com/category/ros-navigation/)
 
 
-### Code
+### Book & Code
 
 * [Learning_ROS_for_Robotics_Programming_2nd_edition](https://github.com/AaronMR/Learning_ROS_for_Robotics_Programming_2nd_edition)
 * [ROS by Example](http://wiki.ros.org/Books/ROSbyExample)
@@ -44,6 +47,8 @@ rospack plugins --attrib=plugin costmap_2d
 
 ## Gazebo and ROS
 
+* [ROS学习笔记十二：使用gazebo在ROS中仿真](https://www.cnblogs.com/linuxAndMcu/p/10876005.html)
+
 ### Files
 
 * mesh files: .stl, .dae
@@ -68,3 +73,11 @@ roslaunch gazebo_ros mud_world.launch
 
   roslaunch turtlebot_teleop keyboard_teleop.launch --screen
   ```
+
+## ROS IDE
+
+* CLion
+  - [ROS Setup Tutorial](https://www.jetbrains.com/help/clion/ros-setup-tutorial.html)
+
+* Qt Creator
+  - [ROS Qt Creator Plug-in](https://ros-qtc-plugin.readthedocs.io)
