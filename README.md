@@ -24,9 +24,10 @@
 ### Book & Code
 
 * [Learning_ROS_for_Robotics_Programming_2nd_edition](https://github.com/AaronMR/Learning_ROS_for_Robotics_Programming_2nd_edition)
+
 * [ROS by Example](http://wiki.ros.org/Books/ROSbyExample)
   - install rbx1
-    ```bash
+    ```sh
     git clone https://github.com/pirobot/rbx1.git
     git clone https://github.com/vanadiumlabs/arbotix_ros.git
     ```
@@ -36,18 +37,17 @@
 
 ### rosdep
 * Install dependency of all packages in the workspace
-  ```bash
+  ```sh
   rosdep install --from-paths src --ignore-src -r -y
   ```
 
 ### rospack
-```
+
+```sh
 rospack plugins --attrib=plugin costmap_2d
 ```
 
 ## Gazebo and ROS
-
-* [ROS学习笔记十二：使用gazebo在ROS中仿真](https://www.cnblogs.com/linuxAndMcu/p/10876005.html)
 
 ### Files
 

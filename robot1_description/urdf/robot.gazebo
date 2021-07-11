@@ -5,28 +5,27 @@
     <material>Gazebo/Orange</material>
   </gazebo>
 
- <gazebo reference="wheel_1">
-        <material>Gazebo/Black</material>
- </gazebo>
+  <gazebo reference="wheel_1">
+    <material>Gazebo/Black</material>
+  </gazebo>
 
- <gazebo reference="wheel_2">
-        <material>Gazebo/Black</material>
- </gazebo>
+  <gazebo reference="wheel_2">
+    <material>Gazebo/Black</material>
+  </gazebo>
 
- <gazebo reference="wheel_3">
-        <material>Gazebo/Black</material>
- </gazebo>
+  <gazebo reference="wheel_3">
+    <material>Gazebo/Black</material>
+  </gazebo>
 
- <gazebo reference="wheel_4">
-        <material>Gazebo/Black</material>
- </gazebo>
+  <gazebo reference="wheel_4">
+    <material>Gazebo/Black</material>
+  </gazebo>
 
 
   <!-- ros_control plugin -->
   <gazebo>
     <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
       <robotNamespace>/robot</robotNamespace>
-	
     </plugin>
   </gazebo>
 
@@ -132,7 +131,7 @@
         <distortionT2>0.0</distortionT2>
       </plugin>
     </sensor>
-  </gazebo>  
+  </gazebo>
 
 
 </robot>
