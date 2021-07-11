@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 class Map(object):
   def __init__(self):
-    self.map_sub = rospy.Subscriber("map", OccupancyGrid, self.callback)
+    self.map_sub = rospy.Subscriber("/move_base/local_costmap/costmap", OccupancyGrid, self.callback)
     print self.map_sub
 
   def callback(self, mapmsg):
